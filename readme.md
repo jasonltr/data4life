@@ -4,3 +4,15 @@
 `echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null`  
 `sudo apt update`  
 `sudo apt install gh`  
+
+## Created github repo ##  
+`gh auth login`  
+`gh repo create data4life --public --source '<filepath>'`  
+
+## push initial commit into github ##  
+`git remote add origin https://github.com/jasonltr/data4life.git`  
+`git branch -M main`  
+`git push -u origin main`  
+
+
+
