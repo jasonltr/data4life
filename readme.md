@@ -9,7 +9,7 @@
 `gh auth login`  
 `gh repo create data4life --public --source '<filepath>'`  
 
-## push initial commit into github ##  
+## Push initial commit into github ##  
 `git remote add origin https://github.com/jasonltr/data4life.git`  
 `git branch -M main`  
 `git push -u origin main`  
