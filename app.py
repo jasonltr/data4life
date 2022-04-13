@@ -71,8 +71,7 @@ def delete_appt_patient (doctor,patient,date,time,data):
         data = data.drop(data[(data['doctor_id']==doctor) & (data["patient_id"]== patient) & (data["date"]==date) & (data["time"]==time)].index)
         return 'Appointment cancelled, these are your existing appointments',check_all_patient_appt(patient,data),data
 
-print('Welcome to the appointment system, below is the current list ')
-data
+print('Welcome to the appointment system, run data to see current list \n')
 print('Available functions are: \n')
 print('check_doc_appt(doc_id_input(),date_input(),data)\n')
 print('check_patient_appt(patient_id_input(),date_input(),data) \n')

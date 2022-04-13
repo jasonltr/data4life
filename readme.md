@@ -15,4 +15,6 @@
 `git push -u origin main`  
 
 
-
+## Running the script ##
+If using jupyter notebook IDE, all functions can be ran sequentially and in blocks  
+If using python3 interpreter in CLI, run `exec(open("<filepath>").read())`  
