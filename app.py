@@ -24,9 +24,13 @@ def patient_id_input():
     return patient
 
 def time_input():
-    time = str(input("Please enter your preferred time in HH:MM:SS: "))
+    while True:
+        time = str(input("Please enter your preferred time in HH:MM:SS: "))
+        if time > '16:00:00' or time < '08:00:00':
+            print('Appointment times must be between 08:00:00 and 16:00:00')
+            continue
+        break
     return time
-
 # Q2:
 
 # Get all appointments for the given doctor & date
